@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Luis Segura | Legado</title>
+
+  <link rel="stylesheet" href="./CSS/albumlegado.css">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="./font-family/stylesheet.css">
+</head>
+
+<body>
+  <nav class="menu">
+
+    <div class="list-container">
+      <ul class="lists desktop">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="biografia.html">Biografia</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="./albumlegado.html" class="active">Legado</a></li>
+        <li class="logo"><img src="./LOGOS/LOGO Luis Segura (Negro).png"></li>
+        <li><a href="discografia.html">Discografia</a></li>
+        <li><a href="./prensa.html">Prensa</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+
+  <div class="main-header">
+    <a class="main-logo" href="/">
+      <img src="./LOGOS/LOGO Luis Segura (Negro).png" alt="logo dudidev" />
+    </a>
+    <nav id="nav" class="main-nav">
+      <div class="nav-links">
+        <a class="link-item active" href="index.html">Inicio</a>
+        <a class="link-item" href="biografia.html">Biografía</a>
+        <a class="link-item" href="galeria.html">Galería</a>
+        <a class="link-item" href="./albumlegado.html">Legado</a>
+        <a class="link-item" href="discografia.html">Discografía</a>
+        <a class="link-item" href="./prensa.html">Prensa</a>
+        <a class="link-item" href="./contacto.html">Contacto</a>
+      </div>
+    </nav>
+    <button id="button-menu" class="button-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <header class="header content">
+
+    <div class="header-video">
+
+
+    </div>
+
+    <div class="header-overlay"></div>
+
+    <div class="header-content">
+
+      <div class="container-gallery">
+
+        <div class="gallery">
+
+
+          <figure class="textjustif">
+            <h2>Álbum Legado</h2> <br>
+            <p>El 30 de octubre de 2020, fue unos de los días más importante de mi vida, ya que en <br> honor a la
+              dilatada trayectoria y en regocijo por la declaratoria de la Bachata <br> por parte de la UNESCO como "Patrimonio Cultural Inmaterial de la Humanidad",
+              <br> les entregué mi último álbum musical titulado “El Papá de la Bachata, su legado”, <br> este es una
+              recopilación de 40 de mis grandes éxitos musicales interpretados con igual <br> número de artistas de
+              diferentes géneros, generaciones y nacionalidades. <br> El álbum está distribuido en Añoñado I, II, III, IV
+              (Volúmenes) </p> <br>
+            <p>
+              Por las características y magnitud del álbum, este se convirtió en un fenómeno jamás logrado, ya que en la
+              historia de la música nunca se había desarrollado uno con esta cantidad y calidad de artistas
+              interpretando a Dúo composiciones del mismo autor, haciéndolo de colección y plasmando un gran legado para
+              las presentes y futuras generaciones.
+            </p>
+            <br>
+            <div class="listbtn">
+              <a href="anonado1.html" target="_blanck" class="btn">Añoñado I</a>
+              <a href="anonado2.html" target="_blanck" class="btn">Añoñado II</a>
+              <a href="anonado3.html" target="_blanck" class="btn">Añoñado III</a>
+              <a href="anonado4.html" target="_blanck" class="btn">Añoñado IV</a>
+            </div>
+          </figure>
+          <br>
+
+          </figure>
+          <figure><img src="./CSS/DISCOGRAFIA FINALES/LS-El-Pap -de-la Bachata,-Su Legado.png"></figure>
+
+
+
+        </div>
+      </div>
+
+      <div class="media">
+
+        <div class="social-media">
+          <a href=""><i class="fab fa-spotify"></i></a>
+          <a href=""><i class="fab fa-itunes-note"></i></a>
+          <a href="https://www.facebook.com/luiseguraelpapa" target="_blanck"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/LuisSeguraPage" target="_blanck"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/lasdepapa/" target="_blanck"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCu3Dt2WKO1vsr-WrjF6lCOQ" target="_blanck"><i
+              class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </header>
+
+  <script src="https://kit.fontawesome.com/308088dac9.js" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    const toggleButton = document.getElementById('button-menu')
+    const navWrapper = document.getElementById('nav')
+
+    toggleButton.addEventListener('click', () => {
+      toggleButton.classList.toggle('close')
+      navWrapper.classList.toggle('show')
+    })
+
+    navWrapper.addEventListener('click', e => {
+      if (e.target.id === 'nav') {
+        navWrapper.classList.remove('show')
+        toggleButton.classList.remove('close')
+      }
+    })
+  </script>
+</body>
+
+</html>

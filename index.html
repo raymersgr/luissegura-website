@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Luis Segura | Inicio </title>
+
+  <!--MAIN CSS/ STYLE-->
+  <link rel="stylesheet" href="./CSS/main.css" />
+  <link rel="stylesheet" href="./CSS/media.css" />
+  <!--Font Family Style-->
+  <link rel="stylesheet" href="./font-family/stylesheet.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WM7XT723N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WM7XT723N9');
+</script>
+
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav>
+    <ul class="lists desktop">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="biografia.html">Biografía</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="./albumlegado.html">Legado</a></li>
+      <li class="logo"><img src="./LOGOS/logo.png"></li>
+      <li><a href="discografia.html">Discografía</a></li>
+      <li><a href="./prensa.html">Prensa</a></li>
+      <li><a href="./contacto.html">Contacto</a></li>
+    </ul>
+
+
+  </nav>
+  <div class="main-header">
+    <a class="main-logo" href="/">
+      <img src="./LOGOS/logo.png" alt="logo dudidev" />
+    </a>
+    <nav id="nav" class="main-nav">
+      <div class="nav-links">
+        <a class="link-item active" href="index.html">Inicio</a>
+        <a class="link-item" href="biografia.html">Biografía</a>
+        <a class="link-item" href="galeria.html">Galería</a>
+        <a class="link-item" href="./albumlegado.html">Legado</a>
+        <a class="link-item" href="discografia.html">Discografía</a>
+        <a class="link-item" href="./prensa.html">Prensa</a>
+        <a class="link-item" href="./contacto.html">Contacto</a>
+      </div>
+    </nav>
+    <button id="button-menu" class="button-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+
+
+  <header class="header content">
+
+    <div class="header-video">
+      <video onloadedmetadata="this.muted=true" autoplay loop preload="">
+        <source src="./Video-Website.mp4">
+      </video>
+    </div>
+
+
+
+    <div class="header-content">
+      <img src="./LOGOS/Untitled-3.png" alt="LOGO LUISSEGURA">
+      <a href="biografia.html">
+        <p>"Mi vida es una bachata"</p>
+      </a>
+      <a href="https://linkkle.com/luissegura" target="_blanck" class="btn">Álbum LEGADO</a>
+
+
+      <div class="social-media">
+        <a href="https://open.spotify.com/album/5IArhX2hADhY7pLphb7SXG?si=aiYxsooRSXS2cnjqhFPb3A" target="_blanck"><i
+            class="fab fa-spotify"></i></a>
+        <a href="https://music.apple.com/do/album/el-pap%C3%A1-de-la-bachata-su-legado-a%C3%B1o%C3%B1ado-1/1536801540?l=en"
+          target="_blanck"><i class="fab fa-itunes-note"></i></a>
+        <a href="https://www.facebook.com/luiseguraelpapa" target="_blanck"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/LuisSeguraPage" target="_blanck"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/luisseguraelpapa/" target="_blanck"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/watch?v=ZVYcaOtmEYE&list=PLXQ6Jng1XdRST3Pw4lOkKAZ_u1kUpn2ra"
+          target="_blanck"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/308088dac9.js" crossorigin="anonymous"></script>
+  <!--Main JavaScrip-->
+  <script src="./js/app.js"></script>
+
+  <script>
+    const toggleButton = document.getElementById('button-menu')
+    const navWrapper = document.getElementById('nav')
+
+    toggleButton.addEventListener('click', () => {
+      toggleButton.classList.toggle('close')
+      navWrapper.classList.toggle('show')
+    })
+
+    navWrapper.addEventListener('click', e => {
+      if (e.target.id === 'nav') {
+        navWrapper.classList.remove('show')
+        toggleButton.classList.remove('close')
+      }
+    })
+  </script>
+</body>
+
+</html>
