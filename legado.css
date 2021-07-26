@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Big John PRO';
+    background: url(./images/Fondo\ Claro\ WEB.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    margin: 0% auto;
+    z-index: 100;
+
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 1% 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+/* mouse over link */
+
+nav ul li a:hover {
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* selected link */
+
+nav ul li a.active {
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.logo img {
+    max-width: 160px;
+}
+
+/*CONTENT*/
+
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #ddb290;
+}
+
+.content {
+    max-width: 400rem;
+    padding-left: 15rem;
+    padding-right: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*Sse puede añadir background en esta parte*/
+    z-index: 1;
+    opacity: .85;
+}
+
+.header-content {
+    z-index: 2;
+    margin-top: 100px;
+}
+
+.media {
+    width: 100%;
+    height: 50px;
+    padding: 0 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+
+.social-media {
+    z-index: 1;
+}
+
+.social-media a i {
+    font-size: 20px;
+    color: #000;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.social-media a i:hover {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.container-gallery {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    z-index: 100;
+    
+}
+
+.container-gallery h2 {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 0px;
+    text-transform: uppercase;
+    
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1px;
+}
+
+figure {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    transition: 500ms ease-in-out;
+    outline: 2px solid #000;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: -15px 20px 12px 0px rgba(0, 0, 0, .2);
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+    nav ul li a {
+        font-size: 11px;
+    }
+    .content {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    
+    .content {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .container-gallery {
+        margin-top: 1700px;
+    }
+}
+
+@media screen and (max-width: 1086px) {
+    .container-gallery {
+        margin-top: 650px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .container-gallery {
+        margin-top: 1900px;
+    }
+}
+@media screen and (max-width: 710px) {
+    .container-gallery {
+        margin-top: 1900px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .container-gallery {
+        margin-top: 1900px;
+    }
+}
+@media (max-width: 1240px) {
+    nav ul li a {
+        font-size: 11px;
+    }
+    .content {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .content {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+.btn-menu>.fa-bars {
+    display: none;
+}
+
+@media only screen and (max-width:1086px) {
+    .btn-menu>.fa-bars {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 28px;
+        color: #ddb290;
+        transition: 0.5s;
+        cursor: pointer;
+        z-index: 100000;
+    }
+    .menu .logo-box {
+        margin-left: 30px;
+        
+    }
+    .menu .list-container {
+        position: fixed;
+        
+        left: -100%;
+        width: 100%;
+        height: calc(200vh - 60px);
+        
+    }
+    .menu .list-container .lists {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url(./images/fondo-galeria.jpg);
+        
+    }
+    .menu .list-container ul li {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu .list-container ul li a {
+        font-size: 20px;
+        text-align: center;
+        padding: 12px 0px;
+    }
+}
